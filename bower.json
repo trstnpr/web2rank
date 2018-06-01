@@ -1,0 +1,43 @@
+{
+  "name": "Code",
+  "authors": [
+    "trstnpr <than.pare@gmail.com>"
+  ],
+  "description": "Test Code",
+  "main": "gulpfile.js, package.json, bower.json",
+  "keywords": [
+    "sass",
+    "gulp",
+    "js",
+    "bootstrap",
+    "jquery"
+  ],
+  "license": "MIT",
+  "homepage": "git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "normalize-css": "^5.0.0",
+    "slick-carousel": "^1.6.0",
+    "parallax.js": "^1.4.2",
+    "jquery-ui": "^1.12.1",
+    "alertify.js": "^0.3.11",
+    "simpleWeather": "^3.1.0",
+    "typeahead.js": "^0.11.1",
+    "tinymce": "tinymce-dist#^4.6.5",
+    "bootstrap-select": "^1.12.4",
+    "datatables.net": "^1.10.15",
+    "datatables.net-bs": "^2.1.1",
+    "datatables.net-responsive": "^2.1.1",
+    "datatables.net-responsive-bs": "^2.1.1",
+    "lity": "^2.3.0"
+  }
+}

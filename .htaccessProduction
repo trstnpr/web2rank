@@ -1,0 +1,55 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine on
+	RewriteBase /
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^services/website-design-and-development$ /web-design-and-development? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^services/pay-per-click-management$ /web-server-management? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^services/online-marketing-solutions$ /digital-marketing? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^services/virtual-assistance$ /virtual-assistant? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^contact-us/contact-us$ /contact-us? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^SpfRZ/services/contact-us$ /contact-us? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^MWWZZ/services/contact-us$ /contact-us? [R=301,NE,NC,L]
+	
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^OhORZ/services/contact-us$ /contact-us? [R=301,NE,NC,L]
+	
+	RewriteCond %{QUERY_STRING}  ^$
+	RewriteRule ^services/contact-us$ /contact-us? [R=301,NE,NC,L]
+	
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+	RewriteCond %{HTTPS} off
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+	
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	
+	RewriteCond %{HTTP_HOST} ^web2rankphil\.com$ [NC]
+	RewriteRule ^(.*)$ https://www.web2rankphil.com/$1 [R=301,L]
+	
+</IfModule>
+
